@@ -101,7 +101,8 @@ body {
         letter-spacing: 3rem; } }
     @media only screen and (max-width: 37.5em) {
       .heading-primary--main {
-        letter-spacing: 2.5rem; } }
+        letter-spacing: 2rem;
+        font-size: 4rem; } }
   .heading-primary--sub {
     font-size: 2rem;
     letter-spacing: 1.8rem;
@@ -281,9 +282,13 @@ body {
       padding: 4rem 3rem; } }
   @media only screen and (max-width: 37.5em) {
     .features-box {
-      padding: 6rem 9rem;
-      width: 70%;
+      padding: 6rem;
+      width: 80%;
       justify-self: center; } }
+  @media only screen and (max-width: 25em) {
+    .features-box {
+      width: 90%;
+      padding: 3rem; } }
   .features-box__icon {
     font-size: 6rem;
     color: #7ed56f; }
@@ -339,11 +344,11 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
     .card__picture-1 {
-      background-image: linear-gradient(#ffb900, #ff7730), url("/img/sea-4-small.jpg"); }
+      background-image: linear-gradient(#ffb900, #ff7730), url("../img/sea-4-small.jpg"); }
     .card__picture-2 {
-      background-image: linear-gradient(#55c57a, #28b485), url("/img/mountain-3.jpg"); }
+      background-image: linear-gradient(#55c57a, #28b485), url("../img/mountain-3.jpg"); }
     .card__picture-3 {
-      background-image: linear-gradient(#2998ff, #5643fa), url("/img/nat-7.jpg"); }
+      background-image: linear-gradient(#2998ff, #5643fa), url("../img/nat-7.jpg"); }
   .card__heading {
     position: absolute;
     top: 11rem;
@@ -401,10 +406,16 @@ body {
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); } }
   @media only screen and (max-width: 56.25em) and (max-width: 37.5em), only screen and (hover: none) and (max-width: 37.5em) {
     .card:last-child {
-      width: 70%; } }
+      width: 80%; } }
   @media only screen and (max-width: 56.25em) and (max-width: 37.5em), only screen and (hover: none) and (max-width: 37.5em) {
     .card {
-      width: 70%; } }
+      width: 80%; } }
+  @media only screen and (max-width: 56.25em) and (max-width: 25em), only screen and (hover: none) and (max-width: 25em) {
+    .card:last-child {
+      width: 100%; } }
+  @media only screen and (max-width: 56.25em) and (max-width: 25em), only screen and (hover: none) and (max-width: 25em) {
+    .card {
+      width: 100%; } }
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
       .card__side {
         height: auto;
@@ -660,6 +671,9 @@ body {
     column-rule: 1px solid #eee;
     hyphens: auto;
     margin-bottom: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .popup__text {
+        column-count: 1; } }
   .popup__img {
     display: block;
     width: 100%; }
@@ -693,7 +707,7 @@ body {
 .header {
   position: relative;
   height: 85vh;
-  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)), url("/img/hero-small.jpg");
+  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero-small.jpg");
   background-size: cover;
   background-position: top; }
   @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
@@ -703,7 +717,7 @@ body {
       height: 95vh; } }
   @media (min-resolution: 192dpi) and (min-width: 37.5em), (-webkit-min-device-pixel-ration: 2) and (min-width: 37.5em), (min-width: 125em) {
     .header {
-      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8)), url("/img/hero-large.jpg"); } }
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8)), url("../img/hero-large.jpg"); } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -958,7 +972,7 @@ body {
       padding: 0; } }
 
 .section-features {
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("/img/nat-4.jpg");
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/nat-4.jpg");
   background-size: cover;
   padding: 20rem 0;
   transform: skewY(-7deg); }
@@ -979,17 +993,17 @@ body {
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
 
 .book {
-  background-image: linear-gradient(105deg, #fff 0%, rgba(255, 255, 255, 0.7) 50%, transparent 50%), url("/img/mountaint-2-small.jpg");
+  background-image: linear-gradient(105deg, #fff 0%, rgba(255, 255, 255, 0.7) 50%, transparent 50%), url("../img/mountaint-2-small.jpg");
   background-size: 100%;
   background-position: bottom;
   border-radius: 9px; }
   @media only screen and (max-width: 75em) {
     .book {
       background-size: cover;
-      background-image: linear-gradient(105deg, #fff 0%, rgba(255, 255, 255, 0.8) 65%, transparent 65%), url("/img/mountaint-2-small.jpg"); } }
+      background-image: linear-gradient(105deg, #fff 0%, rgba(255, 255, 255, 0.8) 65%, transparent 65%), url("../img/mountaint-2-small.jpg"); } }
   @media only screen and (max-width: 37.5em) {
     .book {
-      background-image: linear-gradient(#fff 0%, rgba(255, 255, 255, 0.8) 100%), url("/img/mountaint-2-small.jpg"); } }
+      background-image: linear-gradient(#fff 0%, rgba(255, 255, 255, 0.8) 100%), url("../img/mountaint-2-small.jpg"); } }
   @media (min-resolution: 192dpi) and (min-width: 75.1em), (-webkit-min-device-pixel-ration: 2) and (min-width: 75.1em), (min-width: 125em) {
     .book {
       background-image: linear-gradient(105deg, #fff 0%, rgba(255, 255, 255, 0.7) 50%, transparent 50%), url("/img/mountaint-2.jpg"); } }
