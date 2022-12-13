@@ -44,7 +44,7 @@
       rgba($color-primary, 0.8),
       rgba($color-primary-dark, 0.8)
     ),
-    url("../img/nat-4.jpg");
+    url("./img/nat-4.jpg");
   background-size: cover;
   padding: 20rem 0;
 
@@ -86,7 +86,7 @@
       rgba($color-white, 0.7) 50%,
       transparent 50%
     ),
-    url("../img/mountaint-2-small.jpg");
+    url("./img/mountaint-2-small.jpg");
   background-size: 100%;
   background-position: bottom;
   border-radius: 9px;
@@ -100,7 +100,7 @@
         rgba($color-white, 0.8) 65%,
         transparent 65%
       ),
-      url("../img/mountaint-2-small.jpg");
+      url("./img/mountaint-2-small.jpg");
   }
 
   @include respond(phone) {
@@ -108,7 +108,7 @@
         $color-white 0%,
         rgba($color-white, 0.8) 100%
       ),
-      url("../img/mountaint-2-small.jpg");
+      url("./img/mountaint-2-small.jpg");
   }
 
   @media (min-resolution: 192dpi) and (min-width: 75.1em),
@@ -121,7 +121,7 @@
         rgba($color-white, 0.7) 50%,
         transparent 50%
       ),
-      url("/img/mountaint-2.jpg");
+      url("./img/mountaint-2.jpg");
   }
 
   &__form {
