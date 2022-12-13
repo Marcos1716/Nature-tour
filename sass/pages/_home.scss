@@ -1,0 +1,144 @@
+// SECTION ABOUT
+
+.section-about {
+  padding: 30rem 0;
+  margin-top: -20rem;
+  margin-bottom: -10rem;
+
+  background-color: $color-grey;
+
+  @include respond(tab-port) {
+    padding: 30rem 0 50rem;
+  }
+}
+.text-box {
+  position: relative;
+  &::after {
+    content: "Click the image";
+    position: absolute;
+    bottom: -4rem;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 1.6rem;
+    color: $color-grey-dark-5;
+
+    opacity: 0;
+
+    @include respond(tab-port) {
+      opacity: 1;
+    }
+  }
+  @include respond(tab-port) {
+    padding: 0 6rem;
+  }
+
+  @include respond(phone) {
+    padding: 0;
+  }
+}
+// SECTION FEATURES
+
+.section-features {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url("/img/nat-4.jpg");
+  background-size: cover;
+  padding: 20rem 0;
+
+  transform: skewY(-7deg);
+
+  & > * {
+    transform: skewY(7deg);
+  }
+}
+
+// SECTION TOURS
+
+.section-tours {
+  padding: 30rem 0;
+  margin-top: -10rem;
+  background-color: $color-grey;
+}
+
+.section-stories {
+  position: relative;
+  padding: 20rem 0 10rem;
+}
+
+// SECTION BOOK
+.section-book {
+  padding: 10rem 0;
+
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary,
+    $color-primary-dark
+  );
+}
+
+.book {
+  background-image: linear-gradient(
+      105deg,
+      $color-white 0%,
+      rgba($color-white, 0.7) 50%,
+      transparent 50%
+    ),
+    url("/img/mountaint-2-small.jpg");
+  background-size: 100%;
+  background-position: bottom;
+  border-radius: 9px;
+
+  @include respond(tab-land) {
+    background-size: cover;
+
+    background-image: linear-gradient(
+        105deg,
+        $color-white 0%,
+        rgba($color-white, 0.8) 65%,
+        transparent 65%
+      ),
+      url("/img/mountaint-2-small.jpg");
+  }
+
+  @include respond(phone) {
+    background-image: linear-gradient(
+        $color-white 0%,
+        rgba($color-white, 0.8) 100%
+      ),
+      url("/img/mountaint-2-small.jpg");
+  }
+
+  @media (min-resolution: 192dpi) and (min-width: 75.1em),
+    (-webkit-min-device-pixel-ration: 2) and (min-width: 75.1em),
+    (min-width: 125em) {
+    //
+    background-image: linear-gradient(
+        105deg,
+        $color-white 0%,
+        rgba($color-white, 0.7) 50%,
+        transparent 50%
+      ),
+      url("/img/mountaint-2.jpg");
+  }
+
+  &__form {
+    padding: 6rem;
+    padding-bottom: 2rem;
+    width: 50%;
+
+    @include respond(tab-land) {
+      padding: 3rem;
+      width: 65%;
+    }
+
+    @include respond(phone) {
+      padding: 4rem 8rem;
+      width: 100%;
+    }
+  }
+}
+
+// navigation

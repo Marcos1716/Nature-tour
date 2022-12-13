@@ -1,0 +1,53 @@
+.grid {
+  display: grid;
+  gap: 6rem;
+
+  @include respond(tab-land) {
+    gap: 8rem;
+  }
+}
+
+.grid--cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+
+  @include respond(tab-port) {
+    grid-template-columns: 1fr;
+  }
+}
+.grid--cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+
+  @include respond(tab-land) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
+}
+.grid--cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+
+  @include respond(tab-land) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
+}
+.grid--cols-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.footer-grid {
+  display: grid;
+  column-gap: 12rem;
+  grid-template-columns: 1fr 1fr;
+
+  // media
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    row-gap: 8rem;
+  }
+}

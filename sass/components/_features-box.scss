@@ -1,0 +1,32 @@
+.features-box {
+  padding: 2rem;
+  text-align: center;
+  background-color: rgba($color-white, 0.8);
+  border-radius: 3px;
+
+  transition: all 0.3s;
+
+  @include respond(tab-land) {
+    padding: 4rem 3rem;
+  }
+
+  @include respond(phone) {
+    padding: 6rem 9rem;
+    width: 70%;
+    justify-self: center;
+  }
+
+  &__icon {
+    font-size: 6rem;
+    color: $color-primary;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+  }
+
+  &:hover {
+    transform: translateY(-2rem) scale(1.05);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+  }
+}

@@ -1,0 +1,142 @@
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  transform: scale(0);
+  background-color: rgba($color-black, 0.8);
+  z-index: 50000;
+
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+
+  transition: all 0.3s;
+
+  @supports (-webkit-backdrop-filter: blur(10px)) or
+    (backdrop-filter: blur(10px)) {
+    //
+
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba($color-black, 0.8);
+  }
+
+  .popup-open & {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  &__content {
+    @include abs-center;
+    background-color: $color-white;
+    width: 85%;
+    border-radius: 10px;
+
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+
+    display: table;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    .popup-open-1 &--1 {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .popup-open-2 &--2 {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .popup-open-3 &--3 {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+  }
+
+  &__left {
+    width: 33%;
+
+    display: table-cell;
+  }
+  &__right {
+    width: 77%;
+    display: table-cell;
+    vertical-align: middle;
+
+    padding: 3rem 6rem;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+
+    -webkit-column-count: 2;
+    -webkit-column-gap: 3rem;
+    -webkit-column-rule: 1px solid $color-grey-dark;
+    -webkit-hyphens: auto;
+
+    column-count: 2;
+    column-gap: 3rem;
+    column-rule: 1px solid $color-grey-dark;
+    hyphens: auto;
+
+    margin-bottom: 2rem;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+  }
+  &__close {
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+    border: none;
+    background-color: transparent;
+    text-shadow: 0 1rem 1rem rgba($color-black, 0.5);
+    cursor: pointer;
+    color: $color-white;
+
+    font-size: 4rem;
+
+    transition: all 0.3s;
+    &:hover {
+      color: $color-primary-dark;
+    }
+    &:active {
+      transform: rotate(180deg);
+    }
+  }
+
+  // MEDIA QUERIES
+
+  @include respond(tab-port) {
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    &__left {
+      display: flex;
+      width: 100%;
+    }
+
+    &__img {
+      width: 50%;
+    }
+
+    &__right {
+      width: 100%;
+    }
+  }
+}
