@@ -194,12 +194,22 @@
     justify-self: center;
     &:last-child {
       @include respond(phone) {
-        width: 70%;
+        width: 80%;
       }
     }
 
     @include respond(phone) {
-      width: 70%;
+      width: 80%;
+    }
+
+    &:last-child {
+      @include respond(small-phone) {
+        width: 100%;
+      }
+    }
+
+    @include respond(small-phone) {
+      width: 100%;
     }
 
     height: auto;

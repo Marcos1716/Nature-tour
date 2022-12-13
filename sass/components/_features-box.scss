@@ -11,9 +11,14 @@
   }
 
   @include respond(phone) {
-    padding: 6rem 9rem;
-    width: 70%;
+    padding: 6rem;
+    width: 80%;
     justify-self: center;
+  }
+
+  @include respond(small-phone) {
+    width: 90%;
+    padding: 3rem;
   }
 
   &__icon {

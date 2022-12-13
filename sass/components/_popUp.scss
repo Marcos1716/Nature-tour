@@ -91,6 +91,10 @@
     hyphens: auto;
 
     margin-bottom: 2rem;
+
+    @include respond(phone) {
+      column-count: 1;
+    }
   }
 
   &__img {
