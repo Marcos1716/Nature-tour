@@ -107,7 +107,11 @@
     <header class="header">
       <div class="header__logo-box">
         <a href="#">
-          <img src="img/logo-white.png" alt="logo-white" class="header__logo" />
+          <img
+            src="./img/logo-white.png"
+            alt="logo-white"
+            class="header__logo"
+          />
         </a>
       </div>
 
@@ -160,28 +164,31 @@
 
           <div class="composition">
             <img
-              srcset="/img/sea-2-small.jpg 500w, /img/sea-2-large.jpg 1000w"
+              srcset="./img/sea-2-small.jpg 500w, /img/sea-2-large.jpg 1000w"
               sizes="(max-width: 75em) 24vw, 266px"
               alt="forest photo"
               class="composition__photo composition__photo--1"
-              src="/img/sea-2-small.jpg"
+              src="./img/sea-2-small.jpg"
             />
             <img
               srcset="
-                /img/mountain-4-small.jpg  500w,
-                /img/mountain-4-large.jpg 1000w
+                ./img/mountain-4-small.jpg  500w,
+                ./img/mountain-4-large.jpg 1000w
               "
               sizes="(max-width: 75em) 24vw, 266px"
               alt="mountains photo"
               class="composition__photo composition__photo--2"
-              src="/img/mountain-4-small.jpg"
+              src="./img/mountain-4-small.jpg"
             />
             <img
-              srcset="/img/mountain-1.jpg 500w, /img/mountain-1-large.jpg 1000w"
+              srcset="
+                ./img/mountain-1.jpg       500w,
+                /img/mountain-1-large.jpg 1000w
+              "
               sizes="(max-width: 75em) 24vw, 266px"
               alt="mountain photo"
               class="composition__photo composition__photo--3"
-              src="img/mountain-1.jpg"
+              src="./img/mountain-1.jpg"
             />
           </div>
         </div>
@@ -362,11 +369,14 @@
           <div class="story">
             <figure class="story__shape">
               <img
-                srcset="img/jaedine-small.jpg 500w, img/jaedine-large.jpg 1000w"
+                srcset="
+                  ./img/jaedine-small.jpg  500w,
+                  img/jaedine-large.jpg   1000w
+                "
                 sizes="(max-width: 56.25em) 23vw, (max-width: 37.5em) 31vw, 260px"
                 alt="photo of a person"
                 class="story__img"
-                src="img/jaedine-large.jpg"
+                src="./img/jaedine-large.jpg"
               />
               <figcaption class="story__caption">Jaedine Ylade</figcaption>
             </figure>
@@ -389,11 +399,11 @@
           <div class="story">
             <figure class="story__shape">
               <img
-                srcset="img/marcos-small.jpg 500w, img/marcos-large.jpg 1000w"
+                srcset="./img/marcos-small.jpg 500w, img/marcos-large.jpg 1000w"
                 sizes="(max-width: 56.25em) 23vw, (max-width: 37.5em) 31vw, 260px"
                 alt="photo of a person"
                 class="story__img"
-                src="img/marcos-large.jpg"
+                src="./img/marcos-large.jpg"
               />
               <figcaption class="story__caption">Marcos Habacon</figcaption>
             </figure>
@@ -505,8 +515,8 @@
         <picture>
           <source
             srcset="
-              /img/logo-green-small-1x.png 1x,
-              img/logo-green-small-2x.png  2x
+              ./img/logo-green-small-1x.png 1x,
+              ./img/logo-green-small-2x.png 2x
             "
             media="(max-width: 37.5em)"
           />
@@ -515,7 +525,7 @@
             srcset="/img/logo-green-1x.png 1x, /img/logo-green-2x.png 2x"
             alt="footer logo"
             class="footer__logo"
-            src="img/logo-green-2x.png"
+            src="./img/logo-green-2x.png"
           />
         </picture>
       </div>
@@ -559,9 +569,13 @@
       <div class="popup__content popup__content--1">
         <!-- 1 -->
         <div class="popup__left">
-          <img src="/img/trio.jpg" alt="photo of a person" class="popup__img" />
           <img
-            src="/img/marcos.jpg"
+            src="./img/trio.jpg"
+            alt="photo of a person"
+            class="popup__img"
+          />
+          <img
+            src="./img/marcos.jpg"
             alt="photo of a person"
             class="popup__img"
           />
@@ -592,12 +606,12 @@
         <!-- 1 -->
         <div class="popup__left">
           <img
-            src="/img/sea-2-small.jpg"
+            src="./img/sea-2-small.jpg"
             alt="photo of a person"
             class="popup__img"
           />
           <img
-            src="/img/mountain-1.jpg"
+            src="./img/mountain-1.jpg"
             alt="photo of a person"
             class="popup__img"
           />
@@ -627,12 +641,12 @@
         <!-- 1 -->
         <div class="popup__left">
           <img
-            src="/img/sea-4-small.jpg"
+            src="./img/sea-4-small.jpg"
             alt="photo of a person"
             class="popup__img"
           />
           <img
-            src="/img/sea-3.jpg"
+            src="./img/sea-3.jpg"
             alt="photo of a person"
             class="popup__img"
           />
